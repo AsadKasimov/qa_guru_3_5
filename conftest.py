@@ -10,6 +10,11 @@ def set_window_size():
 
 
 @pytest.fixture()
+def open_(set_window_size):
+    browser.config.base_url = 'https://demoqa.com'
+
+
+'''@pytest.fixture()
 def open_browser(set_window_size):
     base_url = 'https://demoqa.com/automation-practice-form'
-    browser.open(base_url)
+    browser.open(base_url)'''
